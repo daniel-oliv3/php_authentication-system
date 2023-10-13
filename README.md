@@ -21,7 +21,7 @@
 
 
 
-<p align="right">
+<p align="center">
   <img alt="...." src="./assets/laravel_plain_wordmark_logo_icon_146439.png" width="20%">
 </p>
 
