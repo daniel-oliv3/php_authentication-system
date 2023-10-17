@@ -18,13 +18,15 @@ defined('CONTROL') or die('Acesso Negado!!');
 </head>
 <body>
 
+<?php require 'nav.php'; ?>
+
 
 <!-- Home -->
-<h3>Estou dentro da aplicação!</h3>
+<h3>Bem-vindo a aplicação</h3>
 
 
 
-
+	[Conteúdo]
 
 
 	

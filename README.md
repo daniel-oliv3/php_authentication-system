@@ -38,6 +38,11 @@
 - http://localhost/php_authentication-system/login_001/public/
 - http://localhost/php_authentication-system/login_001/public/login.php
 - http://localhost/php_authentication-system/login_001/public/index.php?rota=home
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=login
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=logout
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=page1
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=page2
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=page3
 
 
 - Exemplo:

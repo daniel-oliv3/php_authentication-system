@@ -55,7 +55,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     <h3>Login</h3>
     <div>
         <label for="usuario">Usuário</label>
-        <input type="text" name="usuario" id="usuario">
+        <input type="email" name="usuario" id="usuario">
     </div>
     <div>
         <label for="senha">Senha</label>

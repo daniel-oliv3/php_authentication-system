@@ -16,10 +16,20 @@ if(empty($usuario_logado)){
     $rota = $_GET['rota'] ?? 'home';
 }
 
+/* Se o usuario esta logado, mais a rota é login, vai redirecionar para home */
+if(!empty($usuario_logado) && $rota == 'login'){
+    $rota = 'home';
+}
+
+
 /* Analisa a rota */
 $rotas = [
     'login' => 'login.php',
     'home' => 'home.php',
+    'page1' => 'page1.php',
+    'page2' => 'page2.php',
+    'page3' => 'page3.php',
+    'logout' => 'logout.php',
 ];
 
 if(!key_exists($rota, $rotas)){
@@ -27,23 +37,6 @@ if(!key_exists($rota, $rotas)){
 } 
 
 require_once $rotas[$rota];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
