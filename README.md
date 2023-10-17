@@ -28,17 +28,20 @@
 
 
 ##
-### PROJETO COMPLETO | SISTEMA DE LOGIN BÁSICO COM PHP PURO
+### 1 - PROJETO COMPLETO | SISTEMA DE LOGIN BÁSICO COM PHP PURO
 ##
 
 
 
+**URLs**
+
+- http://localhost/php_authentication-system/login_001/public/
+- http://localhost/php_authentication-system/login_001/public/login.php
+- http://localhost/php_authentication-system/login_001/public/index.php?rota=home
 
 
-
-
-
-
+- Exemplo:
+  - login_001
 
 
 
