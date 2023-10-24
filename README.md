@@ -60,6 +60,19 @@
   - All: https://restcountries.com/v3.1/all
   - Brsil: https://restcountries.com/v3.1/name/brazil
 
+**Bootstrap**
+
+- Bootstrap
+  - Link: https://getbootstrap.com/
+
+
+**URLs**
+
+- http://localhost/php_authentication-system/002_consumo-api/
+- http://localhost/php_authentication-system/002_consumo-api/index.php?route=teste
+- http://localhost/php_authentication-system/002_consumo-api/scripts/home.php
+
+
 - Exemplo:
   - 002_consumo-api
 

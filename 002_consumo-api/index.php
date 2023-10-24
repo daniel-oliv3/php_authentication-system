@@ -9,22 +9,22 @@ $routes = require_once('inc/routes.php');
 
 
 // Definir a rota atual
-$routes = $_GET['route'] ?? 'home';
+$route = $_GET['route'] ?? 'home';
 
-if(!in_array($routes, $routes)) {
-    $routes = '404';
+if(!in_array($route, $routes)) {
+    $route = '404';
 }
 
 // Fluxo das rotas
-switch($routes) {
+switch($route) {
     case 'home':
         require_once('inc/header.php');
-        require_once('inc/home.php');
+        require_once('scripts/home.php');
         require_once('inc/footer.php');
         break;
     case '404':
         require_once('inc/header.php');
-        require_once('inc/404.php');
+        require_once('scripts/404.php');
         require_once('inc/footer.php');
         break;
 }
