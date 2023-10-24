@@ -46,7 +46,30 @@
 
 
 - Exemplo:
-  - login_001
+  - 001_login
+
+
+##
+### 2 - CONSUMO DE UMA API COM PHP PURO | PROJETO COMPLETO
+##
+
+- API - Rest Countries
+  - Link: https://restcountries.com/
+
+- EndPoints:
+  - All: https://restcountries.com/v3.1/all
+  - Brsil: https://restcountries.com/v3.1/name/brazil
+
+- Exemplo:
+  - 002_consumo-api
+
+
+
+
+
+
+
+
 
 
 
