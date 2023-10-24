@@ -58,7 +58,7 @@
 
 - EndPoints:
   - All: https://restcountries.com/v3.1/all
-  - Brsil: https://restcountries.com/v3.1/name/brazil
+  - Brasil: https://restcountries.com/v3.1/name/brazil
 
 **Bootstrap**
 
@@ -72,6 +72,77 @@
 - http://localhost/php_authentication-system/002_consumo-api/index.php?route=teste
 - http://localhost/php_authentication-system/002_consumo-api/scripts/home.php
 
+
+**Postman**
+
+- Postman
+  - Link: https://www.postman.com/
+
+**VSCode**
+
+- Extensão:
+  - `Thunder Client`
+
+**Thunder Client**
+
+- Thunder Client
+  - Link : https://www.thunderclient.com/
+
+
+- Vscode Code Snippet {}
+  - PHP Puro = cURL
+
+**Curl**
+
+- Curl
+  - Link: https://curl.se/
+
+
+- Code Snippet (Copy)
+  - Inicio do home.php
+
+- Code ...
+```php
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, [
+  CURLOPT_URL => "https://restcountries.com/v3.1/all",
+  CURLOPT_RETURNTRANSFER => true,
+  // CURLOPT_SSL_VERIFYPEER => false, // solução de erro SSL
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 30,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+  CURLOPT_HTTPHEADER => [
+    "Accept: */*",
+  ],
+]);
+
+$response = curl_exec($curl);
+$err = curl_error($curl);
+
+curl_close($curl);
+
+if ($err) {
+  echo "cURL Error #:" . $err;
+} else {
+  echo $response;
+}
+```
+
+- **IMPORTANTE!**
+
+- Erro!
+  - cURL Error #:SSL certificate problem: certificate has expired
+
+- Solução
+- Acrescentar trecho de codigo no arquivo `home.php`
+```
+CURLOPT_SSL_VERIFYPEER => false,
+```
 
 - Exemplo:
   - 002_consumo-api
