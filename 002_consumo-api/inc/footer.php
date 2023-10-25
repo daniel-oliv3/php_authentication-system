@@ -1,17 +1,5 @@
-<?php
-defined('CONTROL') or die('Acesso Negado!');
+<?php 
+defined('CONTROL') or die('Acesso inválido');
 ?>
-
-
-
-
-
-
-
-
-
-
-<script src=""></script>
 </body>
 </html>
-

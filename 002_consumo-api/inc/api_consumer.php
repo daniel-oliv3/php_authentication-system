@@ -1,7 +1,9 @@
 <?php
 
-class ApiConsumer {
-    private function api($endpoint, $method = 'GET', $post_fields = []){
+class ApiConsumer
+{
+    private function api($endpoint, $method = 'GET', $post_fields = [])
+    {
         $curl = curl_init();
 
         curl_setopt_array($curl, [
@@ -14,7 +16,7 @@ class ApiConsumer {
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => $method,
             CURLOPT_HTTPHEADER => [
-                "Accept: */*",
+                "Accept: */*"
             ],
         ]);
 
@@ -28,18 +30,24 @@ class ApiConsumer {
             die(0);
         } else {
             return json_decode($response, true);
-        }        
+        }
     }
 
-    public function get_all_countries(){
-        // Get all countries data
-        return $this->api('all');
+    public function get_all_countries()
+    {
+        // get all countries data
+        $results = $this->api('all');
+        $countries = [];
+        foreach($results as $result){
+            $countries[] = $result['name']['common'];
+        }
+        sort($countries);
+        return $countries;
     }
 
-    public function get_country($country_name){
-        // Get a specifc country data
+    public function get_country($country_name)
+    {
+        // get a specific country
         return $this->api("name/$country_name");
     }
 }
-
-?>
