@@ -32,3 +32,6 @@ switch ($route) {
         require_once 'inc/footer.php';
         break;
 }
+
+
+?>

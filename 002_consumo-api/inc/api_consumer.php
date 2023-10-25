@@ -51,3 +51,5 @@ class ApiConsumer
         return $this->api("name/$country_name");
     }
 }
+
+?>
