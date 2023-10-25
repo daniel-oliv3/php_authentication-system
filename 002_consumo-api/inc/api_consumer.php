@@ -30,6 +30,16 @@ class ApiConsumer {
             return json_decode($response, true);
         }        
     }
+
+    public function get_all_countries(){
+        // Get all countries data
+        return $this->api('all');
+    }
+
+    public function get_country($country_name){
+        // Get a specifc country data
+        return $this->api("name/$country_name");
+    }
 }
 
 ?>
