@@ -172,10 +172,13 @@ CURLOPT_SSL_VERIFYPEER => false,
 
 **HeidiSQL**
 
+- Sayo2A6OT5Si
+
 - Link: https://www.heidisql.com/
 
 
-- Sayo2A6OT5Si
+- user/admin
+- $2y$10$7aS2DC9sRro1vZA12XNhyumc4qQWzGVgkQpyLY.1Pm2loEuX0WJcO
 
 - Exemplo:
   - 003_login
